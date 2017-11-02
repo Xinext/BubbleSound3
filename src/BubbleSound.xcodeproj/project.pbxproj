@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4192170A1FA990A3002326EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419217091FA990A3002326EF /* AppDelegate.swift */; };
+		4192170C1FA990A3002326EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192170B1FA990A3002326EF /* ViewController.swift */; };
+		4192170F1FA990A3002326EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4192170D1FA990A3002326EF /* Main.storyboard */; };
+		419217111FA990A3002326EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419217101FA990A3002326EF /* Assets.xcassets */; };
+		419217141FA990A3002326EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419217121FA990A3002326EF /* LaunchScreen.storyboard */; };
+		8E923D6A6D70CBB2AF2B63E4 /* Pods_BubbleSound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A5AF5D5618859720F87301 /* Pods_BubbleSound.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		229791A88C9FA9057F68D9EE /* Pods-BubbleSound.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BubbleSound.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BubbleSound/Pods-BubbleSound.debug.xcconfig"; sourceTree = "<group>"; };
+		419217061FA990A2002326EF /* BubbleSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		419217091FA990A3002326EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4192170B1FA990A3002326EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4192170E1FA990A3002326EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		419217101FA990A3002326EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		419217131FA990A3002326EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		419217151FA990A4002326EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A5AF5D5618859720F87301 /* Pods_BubbleSound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BubbleSound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D425118F49C0990D200C81 /* Pods-BubbleSound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BubbleSound.release.xcconfig"; path = "Pods/Target Support Files/Pods-BubbleSound/Pods-BubbleSound.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		419217031FA990A2002326EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E923D6A6D70CBB2AF2B63E4 /* Pods_BubbleSound.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C5D559A7A2AAF235D4FE71F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				229791A88C9FA9057F68D9EE /* Pods-BubbleSound.debug.xcconfig */,
+				D9D425118F49C0990D200C81 /* Pods-BubbleSound.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2EB1C7AA3E116BEE7870178A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43A5AF5D5618859720F87301 /* Pods_BubbleSound.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		419216FD1FA990A1002326EF = {
+			isa = PBXGroup;
+			children = (
+				419217081FA990A2002326EF /* BubbleSound */,
+				419217071FA990A2002326EF /* Products */,
+				2C5D559A7A2AAF235D4FE71F /* Pods */,
+				2EB1C7AA3E116BEE7870178A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		419217071FA990A2002326EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				419217061FA990A2002326EF /* BubbleSound.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		419217081FA990A2002326EF /* BubbleSound */ = {
+			isa = PBXGroup;
+			children = (
+				419217091FA990A3002326EF /* AppDelegate.swift */,
+				4192170B1FA990A3002326EF /* ViewController.swift */,
+				4192170D1FA990A3002326EF /* Main.storyboard */,
+				419217101FA990A3002326EF /* Assets.xcassets */,
+				419217121FA990A3002326EF /* LaunchScreen.storyboard */,
+				419217151FA990A4002326EF /* Info.plist */,
+			);
+			path = BubbleSound;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		419217051FA990A2002326EF /* BubbleSound */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 419217181FA990A4002326EF /* Build configuration list for PBXNativeTarget "BubbleSound" */;
+			buildPhases = (
+				E80EAA853A93AC0D428661CC /* [CP] Check Pods Manifest.lock */,
+				419217021FA990A2002326EF /* Sources */,
+				419217031FA990A2002326EF /* Frameworks */,
+				419217041FA990A2002326EF /* Resources */,
+				B846A45B92D9B30D6E575E9B /* [CP] Embed Pods Frameworks */,
+				12E6C5D869F48937524B365F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BubbleSound;
+			productName = BubbleSound;
+			productReference = 419217061FA990A2002326EF /* BubbleSound.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		419216FE1FA990A1002326EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = xinext;
+				TargetAttributes = {
+					419217051FA990A2002326EF = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 419217011FA990A1002326EF /* Build configuration list for PBXProject "BubbleSound" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 419216FD1FA990A1002326EF;
+			productRefGroup = 419217071FA990A2002326EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				419217051FA990A2002326EF /* BubbleSound */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		419217041FA990A2002326EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419217141FA990A3002326EF /* LaunchScreen.storyboard in Resources */,
+				419217111FA990A3002326EF /* Assets.xcassets in Resources */,
+				4192170F1FA990A3002326EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12E6C5D869F48937524B365F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BubbleSound/Pods-BubbleSound-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B846A45B92D9B30D6E575E9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BubbleSound/Pods-BubbleSound-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E80EAA853A93AC0D428661CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		419217021FA990A2002326EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4192170C1FA990A3002326EF /* ViewController.swift in Sources */,
+				4192170A1FA990A3002326EF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4192170D1FA990A3002326EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4192170E1FA990A3002326EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		419217121FA990A3002326EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				419217131FA990A3002326EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		419217161FA990A4002326EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		419217171FA990A4002326EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		419217191FA990A4002326EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 229791A88C9FA9057F68D9EE /* Pods-BubbleSound.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N89BHW7Q5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = BubbleSound/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinext.BubbleSound;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4192171A1FA990A4002326EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D425118F49C0990D200C81 /* Pods-BubbleSound.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N89BHW7Q5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = BubbleSound/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinext.BubbleSound;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		419217011FA990A1002326EF /* Build configuration list for PBXProject "BubbleSound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				419217161FA990A4002326EF /* Debug */,
+				419217171FA990A4002326EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		419217181FA990A4002326EF /* Build configuration list for PBXNativeTarget "BubbleSound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				419217191FA990A4002326EF /* Debug */,
+				4192171A1FA990A4002326EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 419216FE1FA990A1002326EF /* Project object */;
+}

@@ -1,0 +1,14 @@
+*** コンパイルするための準備 ***
+
+1.CocoaPodsライブラリのインストール
+    (CocoaPodsの環境が用意されている事を前提にしています。)
+    ターミナルにて、./srcフォルダへ移動して
+    pod install
+    コマンドを実行してください。
+
+2.AdModDef.swiftファイルの設定
+    ./for Firebase/AdModDef.swift の内容を適切に変更して
+    ./src/BubbleSound/ へコピーしてください。
+    (AdModの各IDはGoogleFirebase及びAdModの仕様に従ってください。)
+
+
