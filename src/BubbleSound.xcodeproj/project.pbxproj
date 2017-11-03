@@ -11,7 +11,8 @@
 		4192170C1FA990A3002326EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192170B1FA990A3002326EF /* ViewController.swift */; };
 		4192170F1FA990A3002326EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4192170D1FA990A3002326EF /* Main.storyboard */; };
 		419217111FA990A3002326EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419217101FA990A3002326EF /* Assets.xcassets */; };
-		419217141FA990A3002326EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419217121FA990A3002326EF /* LaunchScreen.storyboard */; };
+		41FE6A9F1FAC374A00F54C45 /* image in Resources */ = {isa = PBXBuildFile; fileRef = 41FE6A9E1FAC374A00F54C45 /* image */; };
+		41FE6AA11FAC37A200F54C45 /* SE in Resources */ = {isa = PBXBuildFile; fileRef = 41FE6AA01FAC37A200F54C45 /* SE */; };
 		8E923D6A6D70CBB2AF2B63E4 /* Pods_BubbleSound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A5AF5D5618859720F87301 /* Pods_BubbleSound.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,8 +23,9 @@
 		4192170B1FA990A3002326EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4192170E1FA990A3002326EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		419217101FA990A3002326EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		419217131FA990A3002326EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		419217151FA990A4002326EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41FE6A9E1FAC374A00F54C45 /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
+		41FE6AA01FAC37A200F54C45 /* SE */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SE; sourceTree = "<group>"; };
 		43A5AF5D5618859720F87301 /* Pods_BubbleSound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BubbleSound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D425118F49C0990D200C81 /* Pods-BubbleSound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BubbleSound.release.xcconfig"; path = "Pods/Target Support Files/Pods-BubbleSound/Pods-BubbleSound.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,8 +84,9 @@
 				4192170B1FA990A3002326EF /* ViewController.swift */,
 				4192170D1FA990A3002326EF /* Main.storyboard */,
 				419217101FA990A3002326EF /* Assets.xcassets */,
-				419217121FA990A3002326EF /* LaunchScreen.storyboard */,
 				419217151FA990A4002326EF /* Info.plist */,
+				41FE6A9E1FAC374A00F54C45 /* image */,
+				41FE6AA01FAC37A200F54C45 /* SE */,
 			);
 			path = BubbleSound;
 			sourceTree = "<group>";
@@ -150,7 +153,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				419217141FA990A3002326EF /* LaunchScreen.storyboard in Resources */,
+				41FE6AA11FAC37A200F54C45 /* SE in Resources */,
+				41FE6A9F1FAC374A00F54C45 /* image in Resources */,
 				419217111FA990A3002326EF /* Assets.xcassets in Resources */,
 				4192170F1FA990A3002326EF /* Main.storyboard in Resources */,
 			);
@@ -225,14 +229,6 @@
 				4192170E1FA990A3002326EF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		419217121FA990A3002326EF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				419217131FA990A3002326EF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
