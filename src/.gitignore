@@ -68,3 +68,4 @@ fastlane/test_output
 
 # AdMod
 AdModDef.swift
+GoogleService-Info.plist
