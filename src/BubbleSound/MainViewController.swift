@@ -43,11 +43,8 @@ class MainViewController: UIViewController {
         
         // 最初に表示される時の処理
         if (firstAppear != true) {
-            //outletMainContentsAreaView.isHidden = true  // メインコンテンツの準備ができるまで非表示
+            outletMainContentsView.isHidden = true  // メインコンテンツの準備ができるまで非表示
         }
-        
-        // 広告マネージャーの初期化
-        adMgr.InitManager(pvc: self, adView: outletADView, hightLC: outletADViewHightLayoutConstraint)
     }
 
     /**
@@ -58,8 +55,13 @@ class MainViewController: UIViewController {
         
         // 最初に表示される時の処理
         if (firstAppear != true) {
-            //outletMainContentsAreaView.isHidden = false // メインコンテンツの準備が完了したので表示
-            adMgr.AdjustPosition(viewWidth: outletADView.frame.size.width)    // 広告の表示
+            
+            // 広告マネージャーの初期化
+            adMgr.InitManager(pvc: self, adView: outletADView, hightLC: outletADViewHightLayoutConstraint)
+            adMgr.AdjustPosition(viewWidth: outletADView.frame.size.width)
+            
+            // メインコンテンツの準備が完了したので表示
+            outletMainContentsView.isHidden = false
             firstAppear = true
         }
     }
