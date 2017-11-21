@@ -12,10 +12,13 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var outletADView: UIView!
     @IBOutlet weak var outletADViewHightLayoutConstraint: NSLayoutConstraint!
+    @IBOutlet weak var outletMainContentsView: UIView!
     
     // MARK: - Private variable
     private var adMgr = AdModMgr()
     private var firstAppear: Bool = false
+    
+    private var m_houseImageView: UIImageView? = nil
     
     // MARK: - ViewController Override
     /**
@@ -28,6 +31,8 @@ class MainViewController: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(MainViewController.changeDirection), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
         
+        // 背景を生成
+        initHouseImage()
     }
 
     /**
@@ -54,7 +59,7 @@ class MainViewController: UIViewController {
         // 最初に表示される時の処理
         if (firstAppear != true) {
             //outletMainContentsAreaView.isHidden = false // メインコンテンツの準備が完了したので表示
-            
+            adMgr.AdjustPosition(viewWidth: outletADView.frame.size.width)    // 広告の表示
             firstAppear = true
         }
     }
@@ -67,20 +72,32 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     /**
      [EventHandler]デバイス回転時
      */
     @objc func changeDirection(notification: NSNotification){
-        adMgr.AdjustPosition(viewWidth: outletADView.frame.size.width)    // 広告の表示
+
+        self.rotateView(view: m_houseImageView!, orientation: UIDevice.current.orientation)
+    }
+    
+    // MARK: - Private method
+    /**
+     HouseImageViewの生成
+     */
+    private func initHouseImage() {
+        
+        // サイズ・位置の算出
+        let ICON_SIZE = self.view.frame.size.width / 3.2
+        let POS_X = (self.view.frame.width / 2) - (ICON_SIZE / 2)
+        let POS_Y = (self.view.frame.height / 2) - (ICON_SIZE / 2)
+        let viewRect = CGRect(x: POS_X, y: POS_Y, width: ICON_SIZE, height: ICON_SIZE)
+        
+        // SubViewの生成してイメージを設定
+        m_houseImageView = UIImageView(frame: viewRect)
+        let img = UIImage(named:"image/house.png")!
+        m_houseImageView!.image = img
+        
+        // MainViewへ追加
+        self.view.addSubview(m_houseImageView!)
     }
 }

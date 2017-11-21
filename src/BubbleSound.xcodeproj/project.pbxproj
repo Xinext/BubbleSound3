@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		418A9DB91FC406C3002E8931 /* CommonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418A9DB81FC406C3002E8931 /* CommonUtility.swift */; };
 		4192170A1FA990A3002326EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419217091FA990A3002326EF /* AppDelegate.swift */; };
 		4192170F1FA990A3002326EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4192170D1FA990A3002326EF /* Main.storyboard */; };
 		419217111FA990A3002326EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419217101FA990A3002326EF /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		229791A88C9FA9057F68D9EE /* Pods-BubbleSound.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BubbleSound.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BubbleSound/Pods-BubbleSound.debug.xcconfig"; sourceTree = "<group>"; };
+		418A9DB81FC406C3002E8931 /* CommonUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtility.swift; sourceTree = "<group>"; };
 		419217061FA990A2002326EF /* BubbleSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		419217091FA990A3002326EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4192170E1FA990A3002326EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				41B673421FAC57A00001AE2C /* AdModMgr.swift */,
 				419217091FA990A3002326EF /* AppDelegate.swift */,
 				41B968F71FB017AC00B92237 /* MainViewController.swift */,
+				418A9DB81FC406C3002E8931 /* CommonUtility.swift */,
 				4192170D1FA990A3002326EF /* Main.storyboard */,
 				419217101FA990A3002326EF /* Assets.xcassets */,
 				419217151FA990A4002326EF /* Info.plist */,
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41B673451FAC57A00001AE2C /* AdModDef.swift in Sources */,
+				418A9DB91FC406C3002E8931 /* CommonUtility.swift in Sources */,
 				41B673441FAC57A00001AE2C /* AdModMgr.swift in Sources */,
 				4192170A1FA990A3002326EF /* AppDelegate.swift in Sources */,
 				41B968F81FB017AC00B92237 /* MainViewController.swift in Sources */,

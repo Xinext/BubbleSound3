@@ -45,6 +45,7 @@
                     <connections>
                         <outlet property="outletADView" destination="HOD-aC-JiH" id="XWC-mo-XmK"/>
                         <outlet property="outletADViewHightLayoutConstraint" destination="bA5-60-gDF" id="U0L-dR-klc"/>
+                        <outlet property="outletMainContentsView" destination="xM2-d9-Jqq" id="D94-b1-IUM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
