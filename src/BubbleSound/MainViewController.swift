@@ -9,18 +9,34 @@ import GoogleMobileAds
 class MainViewController: UIViewController {
 
     // MARK: - IBOutlet
-
-    @IBOutlet weak var outletADView: UIView!
     @IBOutlet weak var outletADViewHightLayoutConstraint: NSLayoutConstraint!
-    @IBOutlet weak var outletMainContentsView: UIView!
+    @IBOutlet weak var outletGameAreaView: UIView!
+    @IBOutlet weak var outletADAreaView: UIView!
     
     // MARK: - Private variable
     private var adMgr = AdModMgr()
+    private var m_gc: GameController?
     private var firstAppear: Bool = false
     
-    private var m_houseImageView: UIImageView? = nil
-    
     // MARK: - ViewController Override
+    /**
+     画面の自動回転をさせない
+     */
+    override var shouldAutorotate: Bool {
+        get {
+            return false
+        }
+    }
+    
+    /**
+     画面をPortraitに固定する
+     */
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        get {
+            return .portrait
+        }
+    }
+    
     /**
      [EventHandler]Viewの生成時
      */
@@ -30,9 +46,6 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         NotificationCenter.default.addObserver(self, selector: #selector(MainViewController.changeDirection), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
-        
-        // 背景を生成
-        initHouseImage()
     }
 
     /**
@@ -43,7 +56,7 @@ class MainViewController: UIViewController {
         
         // 最初に表示される時の処理
         if (firstAppear != true) {
-            outletMainContentsView.isHidden = true  // メインコンテンツの準備ができるまで非表示
+            outletGameAreaView.isHidden = true  // メインコンテンツの準備ができるまで非表示
         }
     }
 
@@ -57,11 +70,14 @@ class MainViewController: UIViewController {
         if (firstAppear != true) {
             
             // 広告マネージャーの初期化
-            adMgr.InitManager(pvc: self, adView: outletADView, hightLC: outletADViewHightLayoutConstraint)
-            adMgr.AdjustPosition(viewWidth: outletADView.frame.size.width)
+            adMgr.InitManager(pvc: self, adView: outletADAreaView, hightLC: outletADViewHightLayoutConstraint)
+            adMgr.AdjustPosition(viewWidth: outletADAreaView.frame.size.width)
             
+            // ゲームコントローラーの開始
+            m_gc = GameController(gv: outletGameAreaView)
+
             // メインコンテンツの準備が完了したので表示
-            outletMainContentsView.isHidden = false
+            outletGameAreaView.isHidden = false
             firstAppear = true
         }
     }
@@ -78,28 +94,6 @@ class MainViewController: UIViewController {
      [EventHandler]デバイス回転時
      */
     @objc func changeDirection(notification: NSNotification){
-
-        self.rotateView(view: m_houseImageView!, orientation: UIDevice.current.orientation)
-    }
-    
-    // MARK: - Private method
-    /**
-     HouseImageViewの生成
-     */
-    private func initHouseImage() {
-        
-        // サイズ・位置の算出
-        let ICON_SIZE = self.view.frame.size.width / 3.2
-        let POS_X = (self.view.frame.width / 2) - (ICON_SIZE / 2)
-        let POS_Y = (self.view.frame.height / 2) - (ICON_SIZE / 2)
-        let viewRect = CGRect(x: POS_X, y: POS_Y, width: ICON_SIZE, height: ICON_SIZE)
-        
-        // SubViewの生成してイメージを設定
-        m_houseImageView = UIImageView(frame: viewRect)
-        let img = UIImage(named:"image/house.png")!
-        m_houseImageView!.image = img
-        
-        // MainViewへ追加
-        self.view.addSubview(m_houseImageView!)
+        m_gc?.UpdateOrientation( UIDevice.current.orientation)
     }
 }

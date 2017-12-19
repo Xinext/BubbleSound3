@@ -8,14 +8,14 @@ import UIKit
 /**
  - UIViewControllerへViewの回転機能を拡張
  */
-extension UIViewController {
+extension UIView {
 
     /**
      指定されたデバイスの向きへ、Viewを回転させます。
      - parameter view: UIView
      - parameter orientation: UIDeviceOrientation
      */
-    func rotateView( view: UIView, orientation: UIDeviceOrientation ) {
+    func rotateView( _ orientation: UIDeviceOrientation ) {
         
         var angle: CGFloat = 0
         
@@ -35,9 +35,23 @@ extension UIViewController {
         
         let radian = angle * CGFloat.pi / 180
         let transRotate = CGAffineTransform(rotationAngle: CGFloat(radian));
-        view.transform = transRotate
+        self.transform = transRotate
     }
 
+}
+
+/**
+ - ArrayへElement指定型のremove機能を追加
+ */
+extension Array where Element: Equatable {
+
+    mutating func remove(object: Element) {
+        if let index = index(of: object){
+            self.remove(at: index)
+            self.remove(object: object)
+        }
+    }
+    
 }
 
 
